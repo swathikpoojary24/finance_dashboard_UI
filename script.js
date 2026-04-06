@@ -1,3 +1,9 @@
+// localStorage
+const saved = localStorage.getItem("transactions");
+if (saved) {
+  transactions = JSON.parse(saved);
+}
+
 let role = "viewer";
 
 const ROLES = {
@@ -58,6 +64,7 @@ function addTransaction() {
   };
 
   transactions.push(newT);
+  localStorage.setItem("transactions", JSON.stringify(transactions));
 
   document.getElementById("amount").value = "";
   document.getElementById("category").value = "";
@@ -80,9 +87,11 @@ function filterData() {
   showInsights(filtered);
 
   if (value === "") {
+    updateSummary(transactions);
     document.getElementById("filteredTotal").innerText = "";
   } else {
     showFilteredTotal(filtered);
+    updateSummary(filtered);
   }
 }
 

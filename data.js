@@ -1,4 +1,4 @@
-const transactions = [
+let transactions = [
   { date: "2026-03-01", amount: 50000, category: "Salary", type: "income" },
   { date: "2026-03-12", amount: 650, category: "Food", type: "expense" },
   { date: "2026-03-04", amount: 3000, category: "Shopping", type: "expense" },
