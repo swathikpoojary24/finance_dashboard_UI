@@ -1,0 +1,34 @@
+.navbar-custom {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  width: 100% !important;
+  box-shadow: 0 2px 12px rgba(37,99,235,0.3);
+}
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+.card-income  {
+  background-color: #d4edda;
+  border-left: 4px solid #22c55e !important;
+}
+.card-balance {
+  background-color: #cce5ff;
+  border-left: 4px solid #3b82f6 !important;
+}
+.card-expense {
+  background-color: #f8d7da;
+  border-left: 4px solid #ef4444 !important;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.chart-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+canvas {
+  max-height: 250px;
+}
