@@ -19,4 +19,5 @@ A simple  and interactive financial tracking dashboard to view income, expenses,
 - Add transactions (Admin only)
 - Role based UI — Admin and Viewer
 - Dark mode toggle
+- Transactions are stored locally and remain available after refresh
 
